@@ -1,105 +1,92 @@
-📌 Project Overview
+# E‑Commerce Sales Analysis | SQL
 
-This project focuses on analyzing customer retention and churn patterns using Power BI. The objective is to help businesses understand customer behavior, identify churn drivers, and improve retention strategies through data modeling, DAX analytics, and interactive dashboards.
+## 📌 Project Overview
 
-🎯 Business Objectives
+This project focuses on analyzing **E‑Commerce sales data using SQL** to derive actionable business insights. The analysis answers key questions related to **revenue, customer behavior, product performance, and regional trends**, helping stakeholders make informed decisions.
 
-Calculate and monitor Customer Churn Rate and Retention Rate
 
-Identify high-risk customer segments
+## 🎯 Business Objectives
 
-Analyze month-over-month (MoM) and year-to-date (YTD) customer trends
+* Analyze **overall sales, revenue, and profit trends**
+* Identify **top‑selling products and categories**
+* Understand **customer purchasing behavior**
+* Compare sales performance across **regions and time periods**
+* Support business decisions using data‑driven insights
 
-Enable data-driven decision-making for stakeholder teams
+## 🛠 Tools & Technologies
 
-🛠 Tools & Technologies
+* **SQL (MySQL / PostgreSQL)** – Data querying & analysis
+* **DBMS** – Relational database management
+* **Excel / CSV** – Source dataset
+* **GitHub** – Version control & documentation
 
-Power BI Desktop – Data modeling & visualization
+## 🧱 Database Schema
 
-DAX (Data Analysis Expressions) – Advanced measures & KPIs
+The data is organized using a **relational schema** optimized for analytical queries.
 
-Power BI Service – Report publishing & scheduled refresh
+**Tables Used:**
 
-GitHub – Version control & project documentation
+* `orders` – Order‑level transaction details
+* `customers` – Customer information
+* `products` – Product details
+* `categories` – Product categories
+* `regions` – Geographic data
+* `order_items` – Line‑item level sales data
 
-🧱 Data Modeling
 
-Designed a Star Schema for optimized performance and scalability
+## 📐 Key Metrics Analyzed
 
-Integrated multiple fact and dimension tables
+* Total Sales Revenue
+* Total Orders
+* Average Order Value (AOV)
+* Total Profit & Profit Margin
+* Sales Growth (MoM / YoY)
+* Customer Purchase Frequency
 
-Ensured clean relationships for accurate KPI calculations
+## 🧮 SQL Concepts Used
 
-Schema Components:
+* `SELECT`, `WHERE`, `ORDER BY`, `GROUP BY`
+* `JOIN` (INNER, LEFT)
+* Subqueries & Common Table Expressions (CTEs)
+* Aggregate functions: `SUM()`, `AVG()`, `COUNT()`
+* Window functions: `RANK()`, `ROW_NUMBER()`
+* Date functions for time‑based analysis
 
-Fact Table: Customer Transactions / Activity
+## 📊 Sample Analysis Queries
 
-Dimension Tables: Customer, Date, Region, Segment
+* Top 10 products by revenue
+* Monthly sales and revenue trends
+* Region‑wise sales performance
+* Repeat vs one‑time customers
+* High‑value customers based on lifetime spend
 
-📐 Key Metrics & DAX Measures
+## 📈 Key Insights (Sample)
 
-Customer Churn Rate
+* Identified product categories contributing the highest revenue
+* Discovered regions with strong sales but low profit margins
+* Found repeat customers generating a significant portion of revenue
+* Observed seasonal patterns in monthly sales trends
 
-Customer Retention Rate
+## 📂 Project Structure
 
-Active Customers
-
-New vs Returning Customers
-
-DAX Concepts Used:
-
-CALCULATE()
-
-FILTER()
-
-Time Intelligence: MTD, YTD, MoM
-
-📊 Dashboard Features
-
-Interactive visuals with Slicers and Drill-through
-
-Customer insights filtered by:
-
-Region
-
-Customer Segment
-
-Time Period
-
-Trend analysis for churn & retention performance
-
-🔄 Automation & Deployment
-
-Published reports to Power BI Service
-
-Configured Scheduled Data Refresh for automated updates
-
-Enabled real-time monitoring for stakeholders
-
-📈 Key Insights (Sample)
-
-Identified regions with higher churn rates
-
-Detected declining retention trends in specific customer segments
-
-Highlighted periods with increased customer drop-off
-
-📂 Project Structure
+```
 ├── Dataset/
-├── PowerBI_Report/
-├── Dashboard_Screenshots/
+├── SQL_Queries/
+│   ├── sales_analysis.sql
+│   ├── customer_analysis.sql
+│   ├── product_analysis.sql
 ├── README.md
-🚀 Future Enhancements
 
-Add predictive churn analysis using Python / ML
+## 🚀 Future Enhancements
 
-Integrate SQL-based data sources
+* Integrate the database with **Power BI / Tableau** for visualization
+* Add **advanced SQL optimization** techniques
+* Implement **customer segmentation** using RFM analysis
 
-Implement customer lifetime value (CLV) modeling
 
-👤 Author
+## 👤 Author
 
-Bhushan Pardeshi
-Data Analyst | Power BI | SQL | Python
+**Bhushan Pardeshi**
+Aspiring Data Analyst | SQL | Power BI | Python | Excel
 
-📌 Feel free to explore, fork, or suggest improvements!# Customer-Retention-Churn-Analysis-Power-BI
+📌 *Feel free to explore, fork, or contribute to this repository!*
